@@ -86,9 +86,11 @@ public class DrawView extends View {
         return paint;
     }
 
-    public static void clear(){
-        canvasDraw.drawRGB(255, 255, 255);
-        instance.invalidate();
+    public static void clear() {
+        if (canvasDraw != null)
+            canvasDraw.drawRGB(255, 255, 255);
+        if (instance != null)
+            instance.invalidate();
     }
 
     private void init() {
