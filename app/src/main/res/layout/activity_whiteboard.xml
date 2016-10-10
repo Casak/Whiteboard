@@ -22,13 +22,17 @@
             android:id="@+id/color_spinner"
             android:layout_width="@dimen/icon_width"
             android:layout_height="@dimen/icon_height"
-            android:dropDownWidth="@dimen/dropdown_width" />
+            android:dropDownWidth="@dimen/dropdown_width"
+            android:popupBackground="@android:color/transparent"
+            android:background="@android:color/transparent"/>
 
         <Spinner
             android:id="@+id/width_spinner"
             android:layout_width="@dimen/icon_width"
             android:layout_height="@dimen/icon_height"
-            android:dropDownWidth="@dimen/dropdown_width"/>
+            android:dropDownWidth="@dimen/dropdown_width"
+            android:popupBackground="@android:color/transparent"
+            android:background="@android:color/transparent"/>
 
         <ImageView
             android:id="@+id/trash_button"
